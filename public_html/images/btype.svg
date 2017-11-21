@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="420" viewBox="0 0 380 420">
+    <defs>
+        <path id="a" d="M0 0h380v420H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <path stroke="#939393" stroke-width="2" d="M1 1h378v418H1z"/>
+        <g mask="url(#b)">
+            <g transform="translate(0 -21)">
+                <path stroke="#939393" stroke-width="2" d="M1 1h18v498H1zM19 1h18v498H19zM37 1h18v498H37zM55 1h18v498H55zM73 1h18v498H73zM91 1h18v498H91zM109 1h18v498h-18zM127 1h18v498h-18zM145 1h18v498h-18zM163 1h18v498h-18zM181 1h18v498h-18zM199 1h18v498h-18zM217 1h18v498h-18zM235 1h18v498h-18zM253 1h18v498h-18zM271 1h18v498h-18zM289 1h18v498h-18zM307 1h18v498h-18zM325 1h18v498h-18zM343 1h18v498h-18zM361 1h18v498h-18zM379 1h18v498h-18z"/>
+                <path stroke="#939393" stroke-width="2" d="M82 302c2.761 0 5 2.207 5 7.826S84.761 320 82 320s-5-4.555-5-10.174S79.239 302 82 302zM280 144c1.657 0 3 2.82 3 10s-1.343 13-3 13-3-5.82-3-13 1.343-10 3-10zM280 358c2.761 0 5 2.82 5 10s-2.239 13-5 13-5-5.82-5-13 2.239-10 5-10zM28 87c2.761 0 5 2.82 5 10s-2.239 13-5 13-5-5.82-5-13 2.239-10 5-10zM352 279c2.761 0 5 2.82 5 10s-2.239 24-5 24-5-16.82-5-24 2.239-10 5-10zM208 279c2.761 0 5-5.82 5-13s-2.239-8-5-8-5 .82-5 8 2.239 13 5 13zM64 425c2.761 0 5-8.869 5-19.81 0-10.94-2.239-12.19-5-12.19s-5 1.25-5 12.19c0 10.941 2.239 19.81 5 19.81zM262 78c2.761 0 5-4.989 5-11.143 0-6.154-2.239-6.857-5-6.857s-5 .703-5 6.857S259.239 78 262 78zM136 199c2.21 0 4 8.038 4 17.952 0 9.915-1.79 11.048-4 11.048s-4-1.133-4-11.048c0-9.914 1.79-17.952 4-17.952z"/>
+                <ellipse cx="82" cy="312" fill="#939393" rx="2" ry="4"/>
+                <ellipse cx="280" cy="155.5" fill="#939393" rx="2" ry="3.5" transform="matrix(1 0 0 -1 0 311)"/>
+                <ellipse cx="280" cy="375.5" fill="#939393" rx="2" ry="3.5" transform="matrix(1 0 0 -1 0 751)"/>
+                <ellipse cx="28" cy="97" fill="#939393" rx="2" ry="4" transform="matrix(1 0 0 -1 0 194)"/>
+                <ellipse cx="352" cy="289" fill="#939393" rx="2" ry="4" transform="matrix(1 0 0 -1 0 578)"/>
+                <ellipse cx="208" cy="266.5" fill="#939393" rx="2" ry="3.5"/>
+                <ellipse cx="64" cy="402" fill="#939393" rx="2" ry="4"/>
+                <ellipse cx="262" cy="68" fill="#939393" rx="2" ry="4"/>
+                <ellipse cx="136" cy="219" fill="#939393" rx="2" ry="6" transform="matrix(1 0 0 -1 0 438)"/>
+            </g>
+        </g>
+    </g>
+</svg>

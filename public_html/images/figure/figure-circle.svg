@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="71px" viewBox="0 0 71 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>figure-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="norm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="figure-circle">
+            <circle id="figure" fill="#E6E6E6" cx="35.5" cy="35.5" r="35.5"></circle>
+            <path d="M42.832,17.864 L42.64,18.584 L44.308,18.584 L44.128,17.864 C44.0159994,17.471998 43.9080005,17.0560022 43.804,16.616 C43.6999995,16.1759978 43.5960005,15.752002 43.492,15.344 L43.444,15.344 C43.3479995,15.7600021 43.2500005,16.1859978 43.15,16.622 C43.0499995,17.0580022 42.9440006,17.471998 42.832,17.864 Z M40,21.824 L42.448,14 L44.572,14 L47.02,21.824 L45.148,21.824 L44.668,19.964 L42.28,19.964 L41.8,21.824 L40,21.824 Z" id="A" fill="#FF7C18"></path>
+            <rect id="line-a" fill="#FF7C18" x="35" y="0" width="1" height="36"></rect>
+        </g>
+    </g>
+</svg>
