@@ -521,16 +521,22 @@ textarea {
     display: none;
   }
 }
-.header .header-top .header-information .header-phones a.menu-toggle {
+.header .header-top .header-information .header-phones a.menu-burger {
   display: none;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .header .header-top .header-information .header-phones a.menu-toggle {
+  .header .header-top .header-information .header-phones a.menu-burger {
+    display: none;
+  }
+  .header .header-top .header-information .header-phones a.menu-burger.menu-toggle {
     display: inline-block;
   }
 }
 @media (max-width: 767px) {
-  .header .header-top .header-information .header-phones a.menu-toggle {
+  .header .header-top .header-information .header-phones a.menu-burger {
+    display: none;
+  }
+  .header .header-top .header-information .header-phones a.menu-burger.menu-toggle {
     display: inline-block;
   }
 }
@@ -778,8 +784,13 @@ textarea {
   border-bottom: none;
   padding: 15px 0;
 }
-.header.fixed .header-information .header-phones a.menu-toggle {
+.header.fixed .header-information .header-phones a.menu-burger:not(.menu-toggle) {
   display: inline-block;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header.fixed .header-information .header-phones a.menu-burger:not(.menu-toggle) {
+    display: none;
+  }
 }
 .header.fixed .header-information .header-nav {
   display: none;
@@ -4173,6 +4184,20 @@ textarea {
 .reveal .close-button {
   color: #fff;
 }
+.reveal.fullscreen {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+.reveal.fullscreen .close-button {
+  color: #000;
+  font-size: 16px;
+  top: 30px;
+}
+.reveal.fullscreen .container {
+  position: relative;
+}
 .reveal.check {
   width: 100%;
   border: none;
@@ -4257,6 +4282,104 @@ textarea {
 }
 .reveal .check-list.figure .check-list__item .img {
   height: auto;
+}
+.reveal .reveal-menu__list {
+  letter-spacing: -0.4em;
+}
+.reveal .reveal-menu__list .reveal-menu__item {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  width: 25%;
+  padding-right: 20px;
+}
+.reveal .reveal-menu__list .reveal-menu__item .title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 13px;
+}
+.reveal .reveal-menu__list .reveal-menu__item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.reveal .reveal-menu__list .reveal-menu__item ul li {
+  margin-bottom: 5px;
+}
+.reveal .reveal-menu__list .reveal-menu__item ul li a {
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: normal;
+  position: relative;
+  text-transform: uppercase;
+  color: #000;
+}
+.reveal .reveal-menu__list .reveal-menu__item ul li a:hover {
+  color: #ff7c18;
+}
+.reveal .reveal-menu__list .reveal-menu__item ul li a.labels:after {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  color: #ff7c18;
+  top: -3px;
+  right: -100%;
+}
+.reveal .reveal-menu__list .reveal-menu__item ul li a.labels.hit:after {
+  content: 'Хит';
+}
+.reveal .reveal-menu__list .reveal-menu__item ul li:last-child a {
+  font-size: 14px;
+  color: #ff7c18;
+  text-transform: none;
+  text-decoration: underline;
+  font-weight: 400;
+}
+.reveal .reveal-menu__list .reveal-menu__item ul li:last-child a:hover {
+  text-decoration: none;
+}
+.reveal .reveal-menu__bottom {
+  text-align: center;
+}
+.reveal .reveal-menu__bottom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  letter-spacing: -0.4em;
+}
+.reveal .reveal-menu__bottom ul li {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+.reveal .reveal-menu__bottom ul li + li {
+  margin-left: 20px;
+}
+.reveal .reveal-menu__bottom ul li a {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #000;
+}
+.reveal .reveal-menu__bottom ul li a:hover {
+  color: #ff7c18;
+}
+.reveal .flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+.reveal .flex .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 /* Reveal end */
 /* Parallax */
