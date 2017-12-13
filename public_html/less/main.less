@@ -1137,6 +1137,16 @@ html, body, h1, h2, h3, h4, h5, button, .btn, .button, input, textarea {
                 }
             }
         }
+        .transcript {
+            border-top: 1px solid @border;
+            padding-top: 24px;
+            margin-bottom: 24px;
+            p {
+                font-size: 14px;
+                line-height: 1.5;
+                margin: 0 0 10px;
+            }
+        }
         h1 {
             font-size: 60px;
             font-weight: 600;
@@ -1321,6 +1331,21 @@ html, body, h1, h2, h3, h4, h5, button, .btn, .button, input, textarea {
     @media @mb {
         text-align: center;
         margin: 0 20px 30px;
+    }
+    &.small {
+        padding: 14px 0 10px;
+        @media @tab {
+            padding: 0 20px 10px;
+            margin-top: 20px;
+        }
+        @media @mb {
+            text-align: center;
+            padding: 0 20px 10px;
+            margin-top: 20px;
+        }
+        .inside {
+            max-width: 1200px;
+        }
     }
     .inside {
         max-width: 820px;
