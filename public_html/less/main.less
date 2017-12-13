@@ -1428,6 +1428,14 @@ html, body, h1, h2, h3, h4, h5, button, .btn, .button, input, textarea {
             margin-top: 0;
         }
     }
+    &.margin-free {
+        .concern-list {
+            margin-top: 0;
+        }
+    }
+    &.small-padding {
+        padding: 80px 0 50px;
+    }
     h3 {
         font-size: 30px;
         font-weight: 600;
@@ -3109,11 +3117,64 @@ html, body, h1, h2, h3, h4, h5, button, .btn, .button, input, textarea {
     }
 }
 
+.wood-information {
+    .row;
+    padding: 30px 0 60px;
+    .wood-information__item {
+        .inline;
+        .middle;
+        width: 33.33%;
+        p {
+            max-width: 170px;
+            position: relative;
+            font-size: 18px;
+            font-weight: 600;
+            img {
+                position: absolute;
+                display: block;
+            }
+            &:first-child {
+                img {
+                    top: -20px;
+                }
+            }
+            &:last-child {
+                img {
+                    bottom: -20px;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &:first-child {
+            padding-right: 5%;
+            p {
+                float: right;
+                clear: both;
+                img {
+                    right: -75%;
+                }
+            }
+        }
+        &:last-child {
+            padding-left: 5%;
+            img {
+                left: -75%;
+            }
+        }
+    }
+}
+
 .information-column {
     .row;
     padding: 70px 0;
+    &.small-padding {
+        padding: 40px 0;
+    }
     @media @mb {
         padding: 30px 0;
+        &.small-padding {
+            padding: 30px 0;
+        }
     }
     .block {
         .inline;

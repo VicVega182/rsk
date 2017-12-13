@@ -1501,6 +1501,12 @@ textarea {
 .concern.bordered .concern-list {
   margin-top: 0;
 }
+.concern.margin-free .concern-list {
+  margin-top: 0;
+}
+.concern.small-padding {
+  padding: 80px 0 50px;
+}
 .concern h3 {
   font-size: 30px;
   font-weight: 600;
@@ -3445,12 +3451,61 @@ textarea {
   margin-top: -2px;
   transform: rotate(180deg);
 }
+.wood-information {
+  letter-spacing: -0.4em;
+  padding: 30px 0 60px;
+}
+.wood-information .wood-information__item {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+  width: 33.33%;
+}
+.wood-information .wood-information__item p {
+  max-width: 170px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+}
+.wood-information .wood-information__item p img {
+  position: absolute;
+  display: block;
+}
+.wood-information .wood-information__item p:first-child img {
+  top: -20px;
+}
+.wood-information .wood-information__item p:last-child img {
+  bottom: -20px;
+  transform: rotate(180deg);
+}
+.wood-information .wood-information__item:first-child {
+  padding-right: 5%;
+}
+.wood-information .wood-information__item:first-child p {
+  float: right;
+  clear: both;
+}
+.wood-information .wood-information__item:first-child p img {
+  right: -75%;
+}
+.wood-information .wood-information__item:last-child {
+  padding-left: 5%;
+}
+.wood-information .wood-information__item:last-child img {
+  left: -75%;
+}
 .information-column {
   letter-spacing: -0.4em;
   padding: 70px 0;
 }
+.information-column.small-padding {
+  padding: 40px 0;
+}
 @media (max-width: 767px) {
   .information-column {
+    padding: 30px 0;
+  }
+  .information-column.small-padding {
     padding: 30px 0;
   }
 }
