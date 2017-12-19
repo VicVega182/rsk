@@ -158,6 +158,15 @@ $(document).ready(function () {
             infinite: false
         });
     }
+    
+    /* Фильтр на мобиле */
+    if (device.mobile() && $('.faq-sort').ex()) {
+        $('.faq-sort .container').slick({
+            variableWidth: true,
+            arrows: false,
+            infinite: false
+        });
+    }
 
     /* Меняем текст на кнопке */
     if (device.mobile() && $('.callback-main').ex()) {
