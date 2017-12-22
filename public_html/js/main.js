@@ -159,6 +159,15 @@ $(document).ready(function () {
         });
     }
     
+    /* Фильтр новостей на мобиле */
+    if (device.mobile() && $('.news-filter').ex()) {
+        $('.news-filter .container').slick({
+            variableWidth: true,
+            arrows: false,
+            infinite: false
+        });
+    }
+    
     /* Фильтр на мобиле */
     if (device.mobile() && $('.faq-sort').ex()) {
         $('.faq-sort .container').slick({
