@@ -125,128 +125,136 @@
 /* Fonts */
 
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?y83r8v');
-    src:  url('../fonts/icomoon.eot?y83r8v#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?y83r8v') format('truetype'),
-        url('../fonts/icomoon.woff?y83r8v') format('woff'),
-        url('../fonts/icomoon.svg?y83r8v#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lgc69r');
+  src:  url('../fonts/icomoon.eot?lgc69r#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?lgc69r') format('truetype'),
+    url('../fonts/icomoon.woff?lgc69r') format('woff'),
+    url('../fonts/icomoon.svg?lgc69r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-fill-gray:before {
-    content: "\e91a";
-    color: #939393;
+  content: "\e91a";
+  color: #939393;
 }
 .icon-installation-gray:before {
-    content: "\e91b";
-    color: #939393;
+  content: "\e91b";
+  color: #939393;
 }
 .icon-planer-gray:before {
-    content: "\e91c";
-    color: #939393;
+  content: "\e91c";
+  color: #939393;
 }
 .icon-trivia-gray:before {
-    content: "\e91d";
-    color: #939393;
+  content: "\e91d";
+  color: #939393;
 }
 .icon-wood-gray:before {
-    content: "\e91e";
-    color: #939393;
+  content: "\e91e";
+  color: #939393;
 }
 .icon-installation:before {
-    content: "\e90b";
+  content: "\e90b";
 }
 .icon-planer:before {
-    content: "\e90d";
+  content: "\e90d";
 }
 .icon-calc:before {
-    content: "\e900";
+  content: "\e900";
 }
 .icon-clock:before {
-    content: "\e901";
+  content: "\e901";
 }
 .icon-fill:before {
-    content: "\e904";
+  content: "\e904";
 }
 .icon-guarantee:before {
-    content: "\e909";
+  content: "\e909";
 }
 .icon-help:before {
-    content: "\e90a";
+  content: "\e90a";
 }
 .icon-pay:before {
-    content: "\e90c";
+  content: "\e90c";
 }
 .icon-production:before {
-    content: "\e90f";
+  content: "\e90f";
 }
 .icon-ruler:before {
-    content: "\e910";
+  content: "\e910";
 }
 .icon-saw:before {
-    content: "\e911";
+  content: "\e911";
 }
 .icon-skill:before {
-    content: "\e912";
+  content: "\e912";
 }
 .icon-trivia:before {
-    content: "\e913";
+  content: "\e913";
 }
 .icon-truck:before {
-    content: "\e914";
+  content: "\e914";
 }
 .icon-wood:before {
-    content: "\e915";
+  content: "\e915";
+}
+.icon-more-minus:before {
+  content: "\e91f";
+  color: #ff7c18;
+}
+.icon-more-plus:before {
+  content: "\e920";
+  color: #ff7c18;
 }
 .icon-alert-circle:before {
-    content: "\e919";
+  content: "\e919";
 }
 .icon-logo-footer:before {
-    content: "\e918";
+  content: "\e918";
 }
 .icon-arrow-left:before {
-    content: "\e902";
+  content: "\e902";
 }
 .icon-arrow-right:before {
-    content: "\e903";
+  content: "\e903";
 }
 .icon-chevron:before {
-    content: "\e905";
+  content: "\e905";
 }
 .icon-close:before {
-    content: "\e906";
+  content: "\e906";
 }
 .icon-comment:before {
-    content: "\e907";
+  content: "\e907";
 }
 .icon-facebook:before {
-    content: "\e908";
+  content: "\e908";
 }
 .icon-menu:before {
-    content: "\e90e";
+  content: "\e90e";
 }
 .icon-vk:before {
-    content: "\e916";
+  content: "\e916";
 }
 .icon-youtube:before {
-    content: "\e917";
+  content: "\e917";
 }
 
 /* Fonts end */
@@ -750,6 +758,13 @@ h3 {
                                     text-decoration: underline;
                                     &:hover {
                                         text-decoration: none;
+                                    }
+                                    i {
+                                        .inline;
+                                        .middle;
+                                        font-size: 5px;
+                                        margin-left: 5px;
+                                        margin-top: -2px;
                                     }
                                 }
                             }
@@ -2681,6 +2696,7 @@ h3 {
                     text-transform: uppercase;
                     color: @gray;
                     margin: 0 0 2px;
+                    letter-spacing: normal;
                     i {
                         color: @orange;
                         font-size: 16px;
@@ -2805,6 +2821,16 @@ h3 {
                         }
                         & + .btn {
                             margin-left: 20px;
+                        }
+                        &.hit {
+                            &:after {
+                                .inline;
+                                vertical-align: top;
+                                color: @orange;
+                                content: 'Рекомендуем';
+                                font-size: 11px;
+                                font-weight: 700;
+                            }
                         }
                     }
                 }
@@ -5030,6 +5056,33 @@ h3 {
     }
 }
 
+.tab-list {
+    .row;
+    padding: 40px 0;
+    .tab-item {
+        .inline;
+        .top;
+        width: ~'Calc(25% - 15px)';
+        margin-right: 20px;
+        margin-bottom: 30px;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        @media @mb {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.56;
+            margin: 0;
+        }
+    }
+}
+
 /* Wrapper end */
 
 /* Reveal */
@@ -5118,9 +5171,19 @@ h3 {
         }
         &.figure {
             .check-list__item {
-                .middle;
                 .img {
-                    height: auto;
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 50%;
+                    border: 1px solid @orange;
+                    text-align: center;
+                    position: relative;
+                    svg {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
                 }
             }
         }
