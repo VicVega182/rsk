@@ -33,25 +33,6 @@ $.fn.extend({
 });
 /* Функция для переключения текста */
 
-/* Функции для меню Амазон */
-
-function activateSubmenu(row) {
-    var $row = $(row),
-            submenuId = $row.data("submenuId"),
-            $submenu = $("#" + submenuId);
-    $submenu.css({
-        display: "block"
-    }).animateCss('fadeIn');
-}
-
-function deactivateSubmenu(row) {
-    var $row = $(row),
-            submenuId = $row.data("submenuId"),
-            $submenu = $("#" + submenuId);
-    $submenu.css("display", "none");
-}
-
-/* Функции для меню Амазон */
 
 /* Функция определения направления скролла */
 
@@ -77,24 +58,6 @@ function scrollDirection() {
 
 
 $(document).ready(function () {
-
-    /* Меню как амазон */
-    $menu = $('#mainUl');
-    $menu.menuAim({
-        activate: activateSubmenu,
-        deactivate: deactivateSubmenu,
-        enter: function (e) {
-            var par = $("#" + e.id);
-            par.find('.submenu').css('display', 'block');
-        },
-        exitMenu: function (e) {
-            if (e.id == 'mainUl') {
-                $('#mainUl .submenu').css('display', 'none');
-            }
-        },
-        rowSelector: '> li',
-        submenuDirection: "below"
-    });
 
     $fixed = false;
     $subFixed = false;
@@ -158,7 +121,7 @@ $(document).ready(function () {
             infinite: false
         });
     }
-    
+
     /* Фильтр новостей на мобиле */
     if (device.mobile() && $('.news-filter').ex()) {
         $('.news-filter .container').slick({
@@ -167,7 +130,7 @@ $(document).ready(function () {
             infinite: false
         });
     }
-    
+
     /* Фильтр на мобиле */
     if (device.mobile() && $('.faq-sort').ex()) {
         $('.faq-sort .container').slick({
@@ -238,13 +201,24 @@ $(document).ready(function () {
             dots: true
         });
     }
-    
+
     /* Слайдер в отзывах */
     if ($('.reviews-item__img.slides').ex()) {
         $('.reviews-item__img.slides').slick({
             slidesToShow: 1,
             arrows: false,
             dots: true
+        });
+    }
+
+    /* Слайдер в проекте */
+    if ($('.project-images').ex() && device.mobile()) {
+        $('.project-images').slick({
+            slidesToShow: 1,
+            arrows: true,
+            dots: false,
+            prevArrow: '<button type="button" class="slick-prev"><i class="icon-arrow-left"></i></button>',
+            nextArrow: '<button type="button" class="slick-next"><i class="icon-arrow-right"></i></button>'
         });
     }
 
@@ -346,4 +320,11 @@ $(document).ready(function () {
     var $this = $(this);
     $this.closest('.works-filter').find('.works-filter__body').slideToggle();
     $('.clear-filter__mobile').slideToggle();
+}).on('click tap', '.js-form__toggle', function () {
+    var $this = $(this);
+    $this.closest('form').find('.js-form__toggled').slideToggle();
+    $this.find('span').toggleText('Добавить данные о заказе — размеры, примеры и тп', 'Скрыть даннные');
+}).on('click', '.js-show-block', function (e) {
+    var $this = $(this);
+    $this.closest('div').find($this.attr('data-show-block')).toggleClass('active');
 });

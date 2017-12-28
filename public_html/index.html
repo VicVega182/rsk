@@ -112,7 +112,7 @@
                     <div class="header-phones">
                         <a href="tel:+74997033810">Москва <b>+7 (499) 703-38-10</b></a>
                         <a href="tel:+74997033810">Санкт-Петербург <b>+7 (499) 703-38-10</b></a>
-                        <a href="#" class="header-callback">Заказать обратный звонок</a>
+                        <a data-open="callbackReveal" class="header-callback">Заказать обратный звонок</a>
                         <a class="menu-toggle menu-burger hide-pc"><i class="icon-menu"></i></a>
                         <a class="menu-burger hide-mb" data-open="menuReveal"><i class="icon-menu"></i></a>
                     </div>
@@ -132,178 +132,202 @@
             </div>
             <div class="header-menu container">
                 <nav>
-                    <ul id="mainUl">
-                        <li class="parent" data-submenu-id="menu-shield" id="shieldLi">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li class="parent">
                             <a href="#">Мебельный щит</a>
-                            <div class="submenu" id="menu-shield">
-                                <div class="submenu-menu">
-                                    <div class="left">
-                                        <p class="title">Выбрать щит по породе дерева</p>
-                                        <ul>
-                                            <li><a href="#" class="hit">Дуб</a></li>
-                                            <li><a href="#">Сосна</a></li>
-                                            <li><a href="#">Лиственница</a></li>
-                                            <li><a href="#">Ясень</a></li>
-                                            <li><a href="#">Бук</a></li>
-                                            <li><a href="#">Орех</a></li>
-                                            <li><a href="#">Береза</a></li>
-                                        </ul>
-                                        <a href="#" class="all">Все материалы</a>
-                                    </div>
-                                    <div class="right">
-                                        <div class="right-block">
-                                            <p class="title">Цены на мебельный щит</p>
-                                            <a href="#">В наличии</a>
-                                            <a href="#">На заказ</a>
+                            <ul class="menu">
+                                <li>
+                                    <div class="submenu" id="menu-shield">
+                                        <div class="submenu-menu">
+                                            <div class="left">
+                                                <p class="title">Выбрать щит по породе дерева</p>
+                                                <ul>
+                                                    <li><a href="#" class="hit">Дуб</a></li>
+                                                    <li><a href="#">Сосна</a></li>
+                                                    <li><a href="#">Лиственница</a></li>
+                                                    <li><a href="#">Ясень</a></li>
+                                                    <li><a href="#">Бук</a></li>
+                                                    <li><a href="#">Орех</a></li>
+                                                    <li><a href="#">Береза</a></li>
+                                                </ul>
+                                                <a href="#" class="all">Все материалы</a>
+                                            </div>
+                                            <div class="right">
+                                                <div class="right-block">
+                                                    <p class="title">Цены на мебельный щит</p>
+                                                    <a href="#">В наличии</a>
+                                                    <a href="#">На заказ</a>
+                                                </div>
+                                                <div class="right-block big">
+                                                    <p class="title">Информация</p>
+                                                    <a href="#">Чем отличается столешница от мебельного щита</a>
+                                                    <a href="#">Как выбрать покрытие</a>
+                                                    <a href="#">Как выбрать породу дерева Оптовикам</a>
+                                                    <a href="#">Строителям и прорабам Мебельным производствам</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="right-block big">
-                                            <p class="title">Информация</p>
-                                            <a href="#">Чем отличается столешница от мебельного щита</a>
-                                            <a href="#">Как выбрать покрытие</a>
-                                            <a href="#">Как выбрать породу дерева Оптовикам</a>
-                                            <a href="#">Строителям и прорабам Мебельным производствам</a>
+                                        <div class="submenu-banner">
+                                            <div class="inside">
+                                                <i class="icon-planer"></i>
+                                                <div>
+                                                    <p><b>Мебельный щит — это заготовка, если вам нужна готовая продукция, посетите разделы:</b></p>
+                                                    <p><a href="#">Столешницы</a>, <a href="#">Подоконники</a>, <a href="#">Мебель и детали интерьера из дерева</a>.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="submenu-banner">
-                                    <div class="inside">
-                                        <i class="icon-planer"></i>
-                                        <div>
-                                            <p><b>Мебельный щит — это заготовка, если вам нужна готовая продукция, посетите разделы:</b></p>
-                                            <p><a href="#">Столешницы</a>, <a href="#">Подоконники</a>, <a href="#">Мебель и детали интерьера из дерева</a>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="parent" data-submenu-id="menu-stol" id="shieldLi">
+                        <li class="parent">
                             <a href="#">Столешницы</a>
-                            <div class="submenu" id="menu-stol">
-                                <div class="submenu-menu">
-                                    <div class="left">
-                                        <p class="title">Выбрать щит по породе дерева</p>
-                                        <ul>
-                                            <li><a href="#">Столешницы для кухни</a></li>
-                                            <li><a href="#">Столешницы для ванной</a></li>
-                                            <li><a href="#">Рабочие столешницы</a></li>
-                                            <li><a href="#">Верстаки</a></li>
-                                            <li><a href="#">Барные столешницы</a></li>
-                                        </ul>
-                                        <a href="#" class="all">Все столешницы</a>
-                                    </div>
-                                    <div class="right">
-                                        <div class="right-block">
-                                            <p class="title">Выбрать по:</p>
-                                            <a href="#">По породе дерева<i class="icon-chevron"></i></a>
-                                            <a href="#">Стилю<i class="icon-chevron"></i></a>
-                                            <a href="#">Форме<i class="icon-chevron"></i></a>
+                            <ul class="menu">
+                                <li>
+                                    <div class="submenu" id="menu-stol">
+                                        <div class="submenu-menu">
+                                            <div class="left">
+                                                <p class="title">Выбрать щит по породе дерева</p>
+                                                <ul>
+                                                    <li><a href="#">Столешницы для кухни</a></li>
+                                                    <li><a href="#">Столешницы для ванной</a></li>
+                                                    <li><a href="#">Рабочие столешницы</a></li>
+                                                    <li><a href="#">Верстаки</a></li>
+                                                    <li><a href="#">Барные столешницы</a></li>
+                                                </ul>
+                                                <a href="#" class="all">Все столешницы</a>
+                                            </div>
+                                            <div class="right">
+                                                <div class="right-block">
+                                                    <p class="title">Выбрать по:</p>
+                                                    <a class="js-show-block" data-show-block="#block1">По породе дерева<i class="icon-chevron"></i></a>
+                                                    <div class="block-show active" id="block1">
+                                                        <a href="#">Дуб</a>
+                                                        <a href="#">Сосна</a>
+                                                    </div>
+                                                    <a class="js-show-block" data-show-block="#block2">Стилю<i class="icon-chevron"></i></a>
+                                                    <div class="block-show" id="block2">
+                                                        <a href="#">Дуб</a>
+                                                        <a href="#">Сосна</a>
+                                                    </div>
+                                                    <a href="#">Форме<i class="icon-chevron"></i></a>
+                                                </div>
+                                                <div class="right-block big">
+                                                    <p class="title">Информация</p>
+                                                    <a href="#">Чем отличается столешница от мебельного щита</a>
+                                                    <a href="#">Как выбрать покрытие</a>
+                                                    <a href="#">Как выбрать породу дерева Оптовикам</a>
+                                                    <a href="#">Строителям и прорабам Мебельным производствам</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="right-block big">
-                                            <p class="title">Информация</p>
-                                            <a href="#">Чем отличается столешница от мебельного щита</a>
-                                            <a href="#">Как выбрать покрытие</a>
-                                            <a href="#">Как выбрать породу дерева Оптовикам</a>
-                                            <a href="#">Строителям и прорабам Мебельным производствам</a>
+                                        <div class="submenu-banner">
+                                            <div class="inside">
+                                                <i class="icon-planer"></i>
+                                                <div>
+                                                    <p><b>Мебельный щит — это заготовка, если вам нужна готовая продукция, посетите разделы:</b></p>
+                                                    <p><a href="#">Столешницы</a>, <a href="#">Подоконники</a>, <a href="#">Мебель и детали интерьера из дерева</a>.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="submenu-banner">
-                                    <div class="inside">
-                                        <i class="icon-planer"></i>
-                                        <div>
-                                            <p><b>Мебельный щит — это заготовка, если вам нужна готовая продукция, посетите разделы:</b></p>
-                                            <p><a href="#">Столешницы</a>, <a href="#">Подоконники</a>, <a href="#">Мебель и детали интерьера из дерева</a>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="parent" data-submenu-id="menu-wind" id="shieldLi">
+                        <li class="parent">
                             <a href="#">Подоконники</a>
-                            <div class="submenu" id="menu-wind">
-                                <div class="submenu-menu">
-                                    <div class="left">
-                                        <p class="title">Выбрать щит по породе дерева</p>
-                                        <ul>
-                                            <li><a href="#">Прямой</a></li>
-                                            <li><a href="#">Эркерный</a></li>
-                                            <li><a href="#">Столешница-подоконник</a></li>
-                                        </ul>
-                                        <a href="#" class="all">Все подоконники</a>
-                                    </div>
-                                    <div class="right">
-                                        <div class="right-block">
-                                            <p class="title">Выбрать по:</p>
-                                            <a href="#">По породе дерева<i class="icon-chevron"></i></a>
-                                            <a href="#">Применению<i class="icon-chevron"></i></a>
+                            <ul class="menu">
+                                <li>
+                                    <div class="submenu" id="menu-wind">
+                                        <div class="submenu-menu">
+                                            <div class="left">
+                                                <p class="title">Выбрать щит по породе дерева</p>
+                                                <ul>
+                                                    <li><a href="#">Прямой</a></li>
+                                                    <li><a href="#">Эркерный</a></li>
+                                                    <li><a href="#">Столешница-подоконник</a></li>
+                                                </ul>
+                                                <a href="#" class="all">Все подоконники</a>
+                                            </div>
+                                            <div class="right">
+                                                <div class="right-block">
+                                                    <p class="title">Выбрать по:</p>
+                                                    <a href="#">По породе дерева<i class="icon-chevron"></i></a>
+                                                    <a href="#">Применению<i class="icon-chevron"></i></a>
+                                                </div>
+                                                <div class="right-block big">
+                                                    <p class="title">Информация</p>
+                                                    <a href="#">Чем отличается столешница от мебельного щита</a>
+                                                    <a href="#">Как выбрать покрытие</a>
+                                                    <a href="#">Как выбрать породу дерева Оптовикам</a>
+                                                    <a href="#">Строителям и прорабам Мебельным производствам</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="right-block big">
-                                            <p class="title">Информация</p>
-                                            <a href="#">Чем отличается столешница от мебельного щита</a>
-                                            <a href="#">Как выбрать покрытие</a>
-                                            <a href="#">Как выбрать породу дерева Оптовикам</a>
-                                            <a href="#">Строителям и прорабам Мебельным производствам</a>
+                                        <div class="submenu-banner">
+                                            <div class="inside">
+                                                <i class="icon-planer"></i>
+                                                <div>
+                                                    <p><b>Мебельный щит — это заготовка, если вам нужна готовая продукция, посетите разделы:</b></p>
+                                                    <p><a href="#">Столешницы</a>, <a href="#">Подоконники</a>, <a href="#">Мебель и детали интерьера из дерева</a>.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="submenu-banner">
-                                    <div class="inside">
-                                        <i class="icon-planer"></i>
-                                        <div>
-                                            <p><b>Мебельный щит — это заготовка, если вам нужна готовая продукция, посетите разделы:</b></p>
-                                            <p><a href="#">Столешницы</a>, <a href="#">Подоконники</a>, <a href="#">Мебель и детали интерьера из дерева</a>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="parent" data-submenu-id="menu-meb" id="shieldLi">
+                        <li class="parent">
                             <a href="#">Мебель и интерьер</a>
-                            <div class="submenu" id="menu-meb">
-                                <div class="submenu-menu">
-                                    <div class="left">
-                                        <p class="title">Выбрать щит по породе дерева</p>
-                                        <ul>
-                                            <li><a href="#">Кровати</a></li>
-                                            <li><a href="#">Шкафы и стеллажи</a></li>
-                                            <li><a href="#">Столы</a></li>
-                                            <li><a href="#">Комоды</a></li>
-                                            <li><a href="#">Тумбы</a></li>
-                                            <li><a href="#">Кухни</a></li>
-                                            <li><a href="#">Полки</a></li>
-                                            <li><a href="#">Стеновые панели и потолки</a></li>
-                                            <li><a href="#">Аксессуары</a></li>
-                                            <li><a href="#">Детали для лестниц</a></li>
-                                            <li><a href="#">Мебель для HoReCa</a></li>
-                                        </ul>
-                                        <a href="#" class="all">Вся мебель</a>
-                                    </div>
-                                    <div class="right">
-                                        <div class="right-block">
-                                            <p class="title">Выбрать по:</p>
-                                            <a href="#">По породе дерева<i class="icon-chevron"></i></a>
-                                            <a href="#">Стилю<i class="icon-chevron"></i></a>
-                                            <a href="#">Форме<i class="icon-chevron"></i></a>
+                            <ul class="menu">
+                                <li>
+                                    <div class="submenu" id="menu-meb">
+                                        <div class="submenu-menu">
+                                            <div class="left">
+                                                <p class="title">Выбрать щит по породе дерева</p>
+                                                <ul>
+                                                    <li><a href="#">Кровати</a></li>
+                                                    <li><a href="#">Шкафы и стеллажи</a></li>
+                                                    <li><a href="#">Столы</a></li>
+                                                    <li><a href="#">Комоды</a></li>
+                                                    <li><a href="#">Тумбы</a></li>
+                                                    <li><a href="#">Кухни</a></li>
+                                                    <li><a href="#">Полки</a></li>
+                                                    <li><a href="#">Стеновые панели и потолки</a></li>
+                                                    <li><a href="#">Аксессуары</a></li>
+                                                    <li><a href="#">Детали для лестниц</a></li>
+                                                    <li><a href="#">Мебель для HoReCa</a></li>
+                                                </ul>
+                                                <a href="#" class="all">Вся мебель</a>
+                                            </div>
+                                            <div class="right">
+                                                <div class="right-block">
+                                                    <p class="title">Выбрать по:</p>
+                                                    <a href="#">По породе дерева<i class="icon-chevron"></i></a>
+                                                    <a href="#">Стилю<i class="icon-chevron"></i></a>
+                                                    <a href="#">Форме<i class="icon-chevron"></i></a>
+                                                </div>
+                                                <div class="right-block big">
+                                                    <p class="title">Информация</p>
+                                                    <a href="#">Чем отличается столешница от мебельного щита</a>
+                                                    <a href="#">Как выбрать покрытие</a>
+                                                    <a href="#">Как выбрать породу дерева Оптовикам</a>
+                                                    <a href="#">Строителям и прорабам Мебельным производствам</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="right-block big">
-                                            <p class="title">Информация</p>
-                                            <a href="#">Чем отличается столешница от мебельного щита</a>
-                                            <a href="#">Как выбрать покрытие</a>
-                                            <a href="#">Как выбрать породу дерева Оптовикам</a>
-                                            <a href="#">Строителям и прорабам Мебельным производствам</a>
+                                        <div class="submenu-banner">
+                                            <div class="inside">
+                                                <i class="icon-planer"></i>
+                                                <div>
+                                                    <p><b>Мебельный щит — это заготовка, если вам нужна готовая продукция, посетите разделы:</b></p>
+                                                    <p><a href="#">Столешницы</a>, <a href="#">Подоконники</a>, <a href="#">Мебель и детали интерьера из дерева</a>.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="submenu-banner">
-                                    <div class="inside">
-                                        <i class="icon-planer"></i>
-                                        <div>
-                                            <p><b>Мебельный щит — это заготовка, если вам нужна готовая продукция, посетите разделы:</b></p>
-                                            <p><a href="#">Столешницы</a>, <a href="#">Подоконники</a>, <a href="#">Мебель и детали интерьера из дерева</a>.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
@@ -685,22 +709,44 @@
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <i class="icon-close"></i>
             </button>
-            <h3>Обращение в РСК-интерьер</h3>
-            <p class="quote">После получения заявки мы свяжемся с вами в течение рабочего дня.<br>Обычно перезваниваем в течение часа.</p>
-            <form>
-                <div class="form-row">
-                    <div class="form-cell"><label><input type="text" placeholder="Телефон"></label></div>
-                    <div class="form-cell"><label><input type="text" placeholder="Имя (необязательно)"></label></div>
-                </div>
-                <a href="#" class="js-form__toggle"><i class="icon-more-plus"></i>Добавить данные о заказе — размеры, примеры и тп</a>
-                <div class="js-form__toggled form-row hidden">
-                    <div class="form-cell">
-                        <label>
-                            <textarea placeholder="Комментарии, размеры, ссылки на примеры, пожелания"></textarea>
+            <div class="reveal-body">
+                <h3>Обращение в РСК-интерьер</h3>
+                <p class="quote">После получения заявки мы свяжемся с вами в течение рабочего дня.<br>Обычно перезваниваем в течение часа.</p>
+                <form>
+                    <div class="form-row">
+                        <div class="form-cell"><label><input type="text" placeholder="Телефон"></label></div>
+                        <div class="form-cell"><label><input type="text" placeholder="Имя (необязательно)"></label></div>
+                    </div>
+                    <a href="#" class="js-form__toggle"><i class="icon-more-plus"></i><span>Добавить данные о заказе — размеры, примеры и тп</span></a>
+                    <div class="js-form__toggled form-row hidden">
+                        <div class="form-cell">
+                            <label>
+                                <textarea placeholder="Комментарии, размеры, ссылки на примеры, пожелания"></textarea>
+                            </label>
+                        </div>
+                        <div class="form-cell">
+                            <p class="title-cell">О чем писать при заказе</p>
+                            <a href="#">Мебельного щита</a>
+                            <a href="#">Столешницы</a>
+                            <a href="#">Мебели</a>
+                        </div>
+                        <label class="add-file">
+                            <input type="file">
+                            <i class="icon-paperclip"></i>
+                            Добавить файл
                         </label>
                     </div>
-                </div>
-            </form>
+                    <div class="delimeter"></div>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Я согласен на обработку персональных данных согласно <a href="#">Политики безопасности</a>
+                    </label>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+            <div class="reveal-footer">
+                Вы можете пообщаться с нами в <a href="#">Telegram</a>, <a href="#">WhatsApp</a> или Viber — <b>+7 947 746-24-22</b>
+            </div>
         </div>
         <div class="reveal fullscreen" id="menuReveal" data-reveal>
             <div class="flex">
