@@ -56,6 +56,23 @@ function scrollDirection() {
 
 /* Функция определения направления скролла */
 
+/* Анимация цифр */
+
+function numberAnimation() {
+    $('.number-animation').prop('contador', 0).animate({
+        contador: $('.number-animation').text()
+    }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function (now) {
+            // Verificar si es decimal o no
+            var numText = ($('.number-animation').text() % 1 !== 0 ? now.toFixed(1) : Math.round(now));
+            $('.number-animation').text(numText);
+        }
+    });
+}
+
+/* Анимация цифр */
 
 $(document).ready(function () {
 
@@ -78,6 +95,11 @@ $(document).ready(function () {
         $('.all-menu, .mobile-nav .header-phones').show();
         $this.closest('.is-drilldown').css('min-height', '0px');
     });
+
+    /* Параллакс баннер */
+    if ($('.parallax-bg').ex()) {
+        $('.parallax-bg').parallaxBackground();
+    }
 
     /* Главный баннер */
     if ($('.banner-slider').ex()) {
@@ -327,4 +349,16 @@ $(document).ready(function () {
 }).on('click', '.js-show-block', function (e) {
     var $this = $(this);
     $this.closest('div').find($this.attr('data-show-block')).toggleClass('active');
+}).on('change', '.add-file input', function (e) {
+    var $this = $(this);
+    $this.closest('.add-file').find('span').text(e.target.files[0].name);
+}).on('click', '.mobile-nav', function (e) {
+    var $this = $(this);
+    var menu = $('.mobile-menu');
+    if (!menu.is(e.target)
+            && menu.has(e.target).length === 0) {
+        $this.removeClass('is-open');
+    }
+}).on('change', '.calculation-form input', function () {
+    numberAnimation();
 });
