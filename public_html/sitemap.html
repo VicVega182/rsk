@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Статьи</title>
+        <title>Карта сайта</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -16,9 +16,6 @@
         <script src="js/btnInput.js"></script><!-- Radio input style -->
         <script src="js/ofi.min.js"></script><!-- Object fit for IE -->
         <script src="js/jquery.menu-aim.js"></script><!-- Menu like Amazon -->
-        <script src="js/parallax.min.js"></script><!-- Parallax effect -->
-        <script src="js/jquery.twentytwenty.js"></script><!-- Compare img -->
-        <script src="js/jquery.event.move.js"></script><!-- Compare img -->
         <script src="js/main.js"></script>
         <!-- SCRIPT END -->
 
@@ -28,7 +25,6 @@
         <link rel="stylesheet" href="css/slick.css">
         <link rel="stylesheet" href="css/btnInput.css">
         <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/twentytwenty.css">
         <link rel="stylesheet" href="css/main.css">
         <!-- STYLE END -->
 
@@ -104,7 +100,7 @@
                 </div>
             </div>
         </div>
-       <header class="header">
+        <header class="header">
             <div class="header-top container">
                 <div class="header-logo">
                     <a href="/">
@@ -214,7 +210,11 @@
                                                         <a href="#">Дуб</a>
                                                         <a href="#">Сосна</a>
                                                     </div>
-                                                    <a href="#">Форме<i class="icon-chevron"></i></a>
+                                                    <a class="js-show-block" data-show-block="#block3">Форме<i class="icon-chevron"></i></a>
+                                                    <div class="block-show" id="block3">
+                                                        <a href="#">Дуб</a>
+                                                        <a href="#">Сосна</a>
+                                                    </div>
                                                 </div>
                                                 <div class="right-block big">
                                                     <p class="title">Информация</p>
@@ -343,74 +343,54 @@
                     <nav aria-label="" role="navigation">
                         <ul class="breadcrumbs">
                             <li><a href="#">Главная</a></li>
-                            <li><a href="#">Компания</a></li>
+                            <li></li>
                         </ul>
                     </nav>
-                    <h1>Статьи</h1>
+                    <h1>Карта сайта</h1>
                 </div>
-                <div class="news-list">
-                    <div class="container">
-                        <h2>Про мебель</h2>
-                        <div class="news-list__item">
-                            <div class="news-list-item__img">
-                                <img src="images/img.jpg">
-                            </div>
-                            <div class="news-list-item__txt">
-                                <a href="#" class="news-list-item__title">Чем отличается столешница от мебельного щита</a>
-                                <p>Как часто бывает, что для оформления детской комнаты не хватает оригинальной и яркой мебели! Но решение есть. Например, оригинальная полка-дерево, которая изготавливается в компании «РСК-интерьер» из натуральной древесины.</p>
-                            </div>
-                        </div>
-                        <div class="news-list__item border-bottom">
-                            <div class="news-list-item__img">
-                                <img src="images/img.jpg">
-                            </div>
-                            <div class="news-list-item__txt">
-                                <a href="#" class="news-list-item__title">Чем отличается столешница от мебельного щита</a>
-                                <p>Как часто бывает, что для оформления детской комнаты не хватает оригинальной и яркой мебели! Но решение есть. Например, оригинальная полка-дерево, которая изготавливается в компании «РСК-интерьер» из натуральной древесины.</p>
-                            </div>
-                        </div>
-                        <a href="#" class="showmore-news-list">Все статьи про мебель</a>
-                        <h2>О мебельном щите</h2>
-                        <div class="news-list__item">
-                            <div class="news-list-item__img">
-                                <img src="images/img.jpg">
-                            </div>
-                            <div class="news-list-item__txt">
-                                <a href="#" class="news-list-item__title">Чем отличается столешница от мебельного щита</a>
-                                <p>Как часто бывает, что для оформления детской комнаты не хватает оригинальной и яркой мебели! Но решение есть. Например, оригинальная полка-дерево, которая изготавливается в компании «РСК-интерьер» из натуральной древесины.</p>
-                            </div>
-                        </div>
-                        <div class="news-list__item border-bottom">
-                            <div class="news-list-item__img">
-                                <img src="images/img.jpg">
-                            </div>
-                            <div class="news-list-item__txt">
-                                <a href="#" class="news-list-item__title">Чем отличается столешница от мебельного щита</a>
-                                <p>Как часто бывает, что для оформления детской комнаты не хватает оригинальной и яркой мебели! Но решение есть. Например, оригинальная полка-дерево, которая изготавливается в компании «РСК-интерьер» из натуральной древесины.</p>
-                            </div>
-                        </div>
-                        <a href="#" class="showmore-news-list">Все статьи О мебельном щите</a>
-                        <h2>Производство и обработка древесины</h2>
-                        <div class="news-list__item">
-                            <div class="news-list-item__img">
-                                <img src="images/img.jpg">
-                            </div>
-                            <div class="news-list-item__txt">
-                                <a href="#" class="news-list-item__title">Чем отличается столешница от мебельного щита</a>
-                                <p>Как часто бывает, что для оформления детской комнаты не хватает оригинальной и яркой мебели! Но решение есть. Например, оригинальная полка-дерево, которая изготавливается в компании «РСК-интерьер» из натуральной древесины.</p>
-                            </div>
-                        </div>
-                        <div class="news-list__item border-bottom">
-                            <div class="news-list-item__img">
-                                <img src="images/img.jpg">
-                            </div>
-                            <div class="news-list-item__txt">
-                                <a href="#" class="news-list-item__title">Чем отличается столешница от мебельного щита</a>
-                                <p>Как часто бывает, что для оформления детской комнаты не хватает оригинальной и яркой мебели! Но решение есть. Например, оригинальная полка-дерево, которая изготавливается в компании «РСК-интерьер» из натуральной древесины.</p>
-                            </div>
-                        </div>
-                        <a href="#" class="showmore-news-list">Все статьи О производстве и обработке</a>
-                    </div>
+            </div>
+            <div class="container">
+                <div class="sitemap">
+                    <ul>
+                        <li class="title"><a href="#">Мебель и интерьер</a></li>
+                        <li><a href="#">Кровати</a></li>
+                        <li>
+                            <a href="#">Шкафы и стеллажи</a>
+                            <ul>
+                                <li><a href="#">Платяной шкаф</a></li>
+                                <li><a href="#">Шкаф-купе</a></li>
+                                <li><a href="#">Частично или полностью встроенный шкаф</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Шкафы и стеллажи</a>
+                            <ul>
+                                <li><a href="#">Платяной шкаф</a></li>
+                                <li><a href="#">Шкаф-купе</a></li>
+                                <li><a href="#">Частично или полностью встроенный шкаф</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="title"><a href="#">Мебель и интерьер</a></li>
+                        <li><a href="#">Кровати</a></li>
+                        <li>
+                            <a href="#">Шкафы и стеллажи</a>
+                            <ul>
+                                <li><a href="#">Платяной шкаф</a></li>
+                                <li><a href="#">Шкаф-купе</a></li>
+                                <li><a href="#">Частично или полностью встроенный шкаф</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Шкафы и стеллажи</a>
+                            <ul>
+                                <li><a href="#">Платяной шкаф</a></li>
+                                <li><a href="#">Шкаф-купе</a></li>
+                                <li><a href="#">Частично или полностью встроенный шкаф</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -518,81 +498,124 @@
                 </div>
             </div>
         </footer>
-        <div class="reveal check" id="checkColor" data-reveal>
+        <div class="reveal md" id="callbackReveal" data-reveal>
             <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
+                <i class="icon-close"></i>
             </button>
-            <div class="container">
-                <h2>Выберите тон</h2>
-                <div class="check-list">
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
-                    <a href="#" class="check-list__item">
-                        <span class="img"><img src="images/bitmap-copy-18.png"></span>
-                        Беленый дуб
-                    </a>
+            <div class="reveal-body">
+                <h3>Обращение в РСК-интерьер</h3>
+                <p class="quote">После получения заявки мы свяжемся с вами в течение рабочего дня.<br>Обычно перезваниваем в течение часа.</p>
+                <form>
+                    <div class="form-row">
+                        <div class="form-cell"><label><input type="text" placeholder="Телефон"></label></div>
+                        <div class="form-cell"><label><input type="text" placeholder="Имя (необязательно)"></label></div>
+                    </div>
+                    <a href="#" class="js-form__toggle"><i class="icon-more-plus"></i><span>Добавить данные о заказе — размеры, примеры и тп</span></a>
+                    <div class="js-form__toggled form-row hidden">
+                        <div class="form-cell">
+                            <label>
+                                <textarea placeholder="Комментарии, размеры, ссылки на примеры, пожелания"></textarea>
+                            </label>
+                        </div>
+                        <div class="form-cell">
+                            <p class="title-cell">О чем писать при заказе</p>
+                            <a href="#">Мебельного щита</a>
+                            <a href="#">Столешницы</a>
+                            <a href="#">Мебели</a>
+                        </div>
+                        <label class="add-file">
+                            <input type="file">
+                            <i class="icon-paperclip"></i>
+                            <span>Добавить файл</span>
+                        </label>
+                    </div>
+                    <div class="delimeter"></div>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Я согласен на обработку персональных данных согласно <a href="#">Политики безопасности</a>
+                    </label>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+            <div class="reveal-footer">
+                Вы можете пообщаться с нами в <a href="#">Telegram</a>, <a href="#">WhatsApp</a> или Viber — <b>+7 947 746-24-22</b>
+            </div>
+        </div>
+        <div class="reveal fullscreen" id="menuReveal" data-reveal>
+            <div class="flex">
+                <div class="container">
+                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                        <i class="icon-close"></i>
+                    </button>
+                    <div class="reveal-menu__list">
+                        <div class="reveal-menu__item">
+                            <p class="title">мебельный щит</p>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" class="labels hit">Дуб</a></li>
+                                    <li><a href="#">Сосна</a></li>
+                                    <li><a href="#">Лиственница</a></li>
+                                    <li><a href="#">Ясень</a></li>
+                                    <li><a href="#">Бук</a></li>
+                                    <li><a href="#">Орех</a></li>
+                                    <li><a href="#">Береза</a></li>
+                                    <li><a href="#">Все материалы</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="reveal-menu__item">
+                            <p class="title">Столешницы</p>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Столешницы для кухни</a></li>
+                                    <li><a href="#">Столешницы для ванной</a></li>
+                                    <li><a href="#">Рабочие столешницы</a></li>
+                                    <li><a href="#">Верстаки</a></li>
+                                    <li><a href="#">Барные столешницы</a></li>
+                                    <li><a href="#">Все столешницы</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="reveal-menu__item">
+                            <p class="title">Подоконники</p>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Прямой</a></li>
+                                    <li><a href="#">Эркерный</a></li>
+                                    <li><a href="#">Столешница-подоконник</a></li>
+                                    <li><a href="#">Все подоконники</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="reveal-menu__item">
+                            <p class="title">Мебель и интерьер</p>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Кровати</a></li>
+                                    <li><a href="#">Шкафы и стеллажи</a></li>
+                                    <li><a href="#">Столы</a></li>
+                                    <li><a href="#">Комоды</a></li>
+                                    <li><a href="#">Тумбы</a></li>
+                                    <li><a href="#">Кухни</a></li>
+                                    <li><a href="#">Полки</a></li>
+                                    <li><a href="#">Стеновые панели и потолки</a></li>
+                                    <li><a href="#">Вся мебель</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="reveal-menu__bottom">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Компания</a></li>
+                                <li><a href="#">Наши работы</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
